@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painting for Annabelle — a free drawing app for kids on iPad</title>
+<meta name="description" content="Painting for Annabelle is a free, ad-free iPad painting and colouring app for young children. Picture buttons only — no reading needed. Everything stays on the iPad.">
+<meta property="og:title" content="Painting for Annabelle">
+<meta property="og:description" content="A free, ad-free iPad painting app for young children. No reading needed.">
+<meta property="og:image" content="https://paintingforannabelle.com/assets/screen-welcome.jpg">
+<meta name="theme-color" content="#5B2BE0">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --violet: #5B2BE0;
+    --deep: #24124D;
+    --ink: #2C2450;
+    --muted: #5B5675;
+    --card: #FFFFFF;
+    --soft: #F5F0FF;
+    --line: #E6DCFF;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: #FBF9FF;
+    line-height: 1.6;
+  }
+  a { color: var(--violet); }
+  .hero {
+    position: relative;
+    background: #4B2BDF url('assets/background.jpg') center / cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 56px 16px 72px;
+    overflow: hidden;
+  }
+  .hero img.title { width: min(620px, 92%); height: auto; filter: drop-shadow(0 10px 24px rgba(30,0,80,.35)); }
+  .hero p.lead {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+    margin: 12px auto 26px;
+    max-width: 640px;
+    text-shadow: 0 2px 10px rgba(30,0,80,.45);
+  }
+  .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .badge {
+    font-weight: 700;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.2);
+    border: 2px solid rgba(255,255,255,.65);
+    backdrop-filter: blur(6px);
+  }
+  .shot {
+    display: block;
+    width: min(880px, 100%);
+    margin: 40px auto 0;
+    border-radius: 28px;
+    border: 6px solid rgba(255,255,255,.85);
+    box-shadow: 0 24px 60px rgba(25,0,80,.45);
+  }
+  main { max-width: 1040px; margin: 0 auto; padding: 56px 16px 24px; }
+  h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    color: var(--deep);
+    margin: 0 0 8px;
+    text-align: center;
+  }
+  .sub { text-align: center; color: var(--muted); margin: 0 auto 32px; max-width: 620px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card);
+    border: 2px solid var(--line);
+    border-radius: 24px;
+    padding: 22px;
+  }
+  .card .e { font-size: 2.2rem; line-height: 1; }
+  .card h3 { font-family: 'Baloo 2', sans-serif; margin: 10px 0 4px; font-size: 1.25rem; color: var(--deep); }
+  .card p { margin: 0; color: var(--muted); }
+  section + section { margin-top: 64px; }
+  .promise {
+    background: var(--soft);
+    border-radius: 28px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .promise ul { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .promise li { background: #fff; border: 2px solid var(--line); border-radius: 999px; padding: 8px 16px; font-weight: 700; }
+  .story { max-width: 700px; margin: 0 auto; text-align: center; color: var(--muted); font-size: 1.1rem; }
+  footer {
+    margin-top: 64px;
+    padding: 28px 16px 40px;
+    text-align: center;
+    color: var(--muted);
+    border-top: 2px solid var(--line);
+  }
+  footer nav { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="title" src="assets/title.png" alt="Painting for Annabelle" width="900" height="302">
+  <p class="lead">A free painting and colouring app for little artists on iPad.</p>
+  <div class="badges">
+    <span class="badge">🎨 Free</span>
+    <span class="badge">🚫 No adverts</span>
+    <span class="badge">👀 No reading needed</span>
+    <span class="badge">🔒 Stays on the iPad</span>
+  </div>
+  <img class="shot" src="assets/screen-welcome.jpg" alt="The app's welcome screen with rainbow paint swirls and two big buttons" width="1180" height="820">
+</header>
+
+<main>
+  <section>
+    <h2>Made for small hands</h2>
+    <p class="sub">Every button is a picture, so children who can't read yet can paint on their own.</p>
+    <div class="grid">
+      <div class="card"><div class="e">🖌️</div><h3>12 real brushes</h3><p>Pencil, crayon, chalk, paint, watercolour, spray can, neon and more — each one looks different.</p></div>
+      <div class="card"><div class="e">🌈</div><h3>Every colour</h3><p>80 ready colours, any colour you like, and rainbow paint that works with every brush.</p></div>
+      <div class="card"><div class="e">🦕</div><h3>Hundreds of pictures</h3><p>Animals, dinosaurs, vehicles, sea creatures, food, toys and more to colour in.</p></div>
+      <div class="card"><div class="e">⭐</div><h3>Shapes, stamps &amp; letters</h3><p>Stars, hearts, octagons, letters and numbers — drag to any size.</p></div>
+      <div class="card"><div class="e">😀</div><h3>Emojis</h3><p>Paint with emojis or stick big ones anywhere on the picture.</p></div>
+      <div class="card"><div class="e">📷</div><h3>Your own photos</h3><p>Add a photo and cut out just the person — done on the iPad itself.</p></div>
+      <div class="card"><div class="e">🏞️</div><h3>Backgrounds</h3><p>Castles, beaches, farms, jungles and more to paint on.</p></div>
+      <div class="card"><div class="e">🖼️</div><h3>Saves by itself</h3><p>Every picture is kept automatically to look at, carry on, or share with family.</p></div>
+    </div>
+  </section>
+
+  <section class="promise">
+    <h2>Our promise to parents</h2>
+    <p class="sub" style="margin-bottom:0">We don't collect anything about your child. There are no accounts, no tracking and no adverts.</p>
+    <ul>
+      <li>No data collected</li>
+      <li>No accounts</li>
+      <li>No adverts</li>
+      <li>No tracking</li>
+      <li>Works offline</li>
+      <li>Optional tips only, behind a grown-ups check</li>
+    </ul>
+    <p style="margin-top:18px"><a href="privacy.html">Read the privacy policy</a></p>
+  </section>
+
+  <section>
+    <h2>Why it exists</h2>
+    <p class="story">Painting for Annabelle started as a dad making a drawing app for his five-year-old daughter — simple enough for her to use on her own, and safe enough to hand over without worrying. It's free so that other families can enjoy it too.</p>
+  </section>
+</main>
+
+<footer>
+  <nav>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <div>© <span id="y">2026</span> Painting for Annabelle</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
